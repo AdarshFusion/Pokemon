@@ -11,7 +11,20 @@ const get = async () => {
     let data = await response.json();
 
     // console.log(data.results.url);
-    console.log(data);
+    console.log(data.results);
+
+    let num = data.results;
+    // console.log(num[Math.floor(Math.random()*1302)]);
+    let num1 = num[Math.floor(Math.random()*1300)];
+    let url1 = num1.url;
+    // console.log(url1);
+
+    let response1 = await fetch(url1);
+    let data1 = await response1.json();
+    console.log(data1.sprites.front_shiny);
+    newSrc.src = data1.sprites.front_shiny;
+    
+    
     
     // console.log(data.sprites.front_shiny);
     // newSrc.src = data.sprites.front_shiny;
