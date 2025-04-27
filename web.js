@@ -11,7 +11,7 @@ const get = async () => {
     let data = await response.json();
 
     // console.log(data.results.url);
-    console.log(data.results);
+    // console.log(data.results);
 
     let num = data.results;
     // console.log(num[Math.floor(Math.random()*1302)]);
