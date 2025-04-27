@@ -21,6 +21,7 @@ body {
     /* background-color: rgb(253, 245, 245); */
     background-color: #F6F8FF;
     border: none;
+    box-shadow: 0 0 50px black;
     border-radius: 5px;
 }
 
@@ -34,7 +35,10 @@ body {
     padding: 5px;
     border-radius: 5px;
     font-size: larger;
+    padding: 20px;
+    cursor: pointer;
 }
 #pokeName{
+    text-transform: uppercase;
     color: #50514F;
 }
