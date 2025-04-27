@@ -3,6 +3,8 @@ let url = "https://pokeapi.co/api/v2/pokemon?limit=100000&offset=0";
 
 let newSrc = document.querySelector("#img");
 
+let pokeName = document.querySelector("#pokeName");
+
 let btn = document.querySelector("#btn");
 
 
@@ -21,10 +23,12 @@ const get = async () => {
 
     let response1 = await fetch(url1);
     let data1 = await response1.json();
-    console.log(data1.sprites.front_shiny);
+    // console.log(data1.sprites.front_shiny);
+    // console.log(data1.name);
+    
     newSrc.src = data1.sprites.front_shiny;
     
-    
+    pokeName.innerText = data1.name.toUpperCase();
     
     // console.log(data.sprites.front_shiny);
     // newSrc.src = data.sprites.front_shiny;
