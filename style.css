@@ -19,7 +19,7 @@ body {
 
 .container .container-box{
     /* background-color: rgb(253, 245, 245); */
-    background-color: black;
+    background-color: #F6F8FF;
     border: none;
     border-radius: 5px;
 }
@@ -29,12 +29,12 @@ body {
 }
 
 #btn{
-    background-color: rgb(237, 138, 138);
+    background-color: #A846A0;
     border: none;
     padding: 5px;
     border-radius: 5px;
     font-size: larger;
 }
 #pokeName{
-    color: white;
+    color: #50514F;
 }
